@@ -503,7 +503,7 @@ pub fn ico_anim(seconds:f32) -> *const u8{
     let xrot_mtx:Matrix4<f32> = transformations::make_x_rotation_matrix( (seconds * 5.0) % 360.0 );
     ico_sphere.transform(xrot_mtx);
     
-    let translt_mtx:Matrix4<f32> = transformations::make_translation_matrix( (seconds).cos() * 30.0, 0.0, 80.0 + ((seconds).sin() * 50.0));
+    let translt_mtx:Matrix4<f32> = transformations::make_translation_matrix( (seconds).cos() * 40.0, 0.0, 80.0 + ((seconds).sin() * 50.0));
     ico_sphere.transform(translt_mtx);
 
     let cam:Camera = Camera::new(120.0, 0.1, 120.0);
