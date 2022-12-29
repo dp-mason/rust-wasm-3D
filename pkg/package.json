@@ -1,0 +1,12 @@
+{
+  "name": "david_rust_web_graphics",
+  "version": "0.1.0",
+  "files": [
+    "david_rust_web_graphics_bg.wasm",
+    "david_rust_web_graphics.js",
+    "david_rust_web_graphics.d.ts"
+  ],
+  "module": "david_rust_web_graphics.js",
+  "types": "david_rust_web_graphics.d.ts",
+  "sideEffects": false
+}
