@@ -1,5 +1,7 @@
 import wasmInit from "./pkg/david_rust_web_graphics.js";
 
+var speedMult = 1.0;
+
 const runWasm = async () => {
   const beginT = new Date();
   const beginSeconds = beginT.getTime() * 0.001;
@@ -25,7 +27,7 @@ const runWasm = async () => {
     
     var frameBufPtr;
 
-    frameBufPtr = rustWasm.ico_anim(seconds);
+    frameBufPtr = rustWasm.ico_anim(seconds * speedMult);
     
     //console.log(seconds);
 
@@ -54,5 +56,10 @@ const runWasm = async () => {
     renderFrame();
   }, 1000 / 60);
 };
+
+document.getElementById("applySpeedButton").onclick = function () {
+  speedMult = document.getElementById("userSpeed").value;
+  console.log("new speed set to: ", speedMult);
+}
 
 runWasm();
