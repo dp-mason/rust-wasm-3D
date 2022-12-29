@@ -1,1 +1,2 @@
 .DS_Store
+target/wasm32-unknown-unknown/release/.fingerprint/*
