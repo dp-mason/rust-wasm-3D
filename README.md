@@ -8,7 +8,7 @@ All the math needed to do projections was implemented with the help of
 - https://gabrielgambetta.com/computer-graphics-from-scratch/
 - Javidx9 on YouTube
 
-Fast Line Drawing Algorithm adapted from implementation of Bresenham's line drawing algorith Wikipedia page
+Fast Line Drawing Algorithm adapted from implementation of "Bresenham's line drawing algorithm" Wikipedia page
 - https://en.wikipedia.org//wiki/Bresenham's_line_algorithm
 
 TODO:
